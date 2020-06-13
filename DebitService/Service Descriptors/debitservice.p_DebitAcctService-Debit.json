@@ -1,0 +1,56 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "Debit",
+    "description" : "Debit service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/debit" : {
+      "post" : {
+        "summary" : "postDebit",
+        "description" : "postDebit",
+        "operationId" : "post-debit",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/Element"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Element to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Element"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Element" : {
+      "type" : "object",
+      "required" : [ "AccountNo", "Amount", "Currency" ],
+      "properties" : {
+        "AccountNo" : {
+          "type" : "integer"
+        },
+        "Amount" : {
+          "type" : "integer"
+        },
+        "Currency" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_ADp1QKs8Eeq1X9g1fXvdRg" targetNamespace="http://tns.tibco.com/bw/composite/DebitService" name="DebitService" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_kVaXIqs8Eeq1X9g1fXvdRg" name="debit" promote="Componentp_DebitAcctService/debit">
+    <sca:interface.wsdl xmi:id="_kVaXJqs8Eeq1X9g1fXvdRg" interface="http://xmlns.example.com/20200610130118PLT#wsdl.interface(debit)" scaext:wsdlLocation="../Processes/debitservice/p_DebitAcctService.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_kVa-MKs8Eeq1X9g1fXvdRg" name="RestService" path="/debit" docBasePath="http://localhost:7777/DebitService" docResourcePath="Debit" basePath="/" connector="debitservice.Debit" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/debitservice.p_DebitAcctService-Debit.json">
+      <operation xmi:id="_kVcMUKs8Eeq1X9g1fXvdRg" operationName="post" nickname="post-debit" httpMethod="POST" notes="postDebit" responseStyle="element" requestStyle="element" outputPartName="DebitRes">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <advancedConfig xmi:id="_kVa-Mas8Eeq1X9g1fXvdRg" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_kVcMUas8Eeq1X9g1fXvdRg" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_ALMnsKs8Eeq1X9g1fXvdRg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_AL3WEKs8Eeq1X9g1fXvdRg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_AMqnUKs8Eeq1X9g1fXvdRg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_ANUuoKs8Eeq1X9g1fXvdRg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_AN-O4Ks8Eeq1X9g1fXvdRg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_AOnIEKs8Eeq1X9g1fXvdRg" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_APOzIKs8Eeq1X9g1fXvdRg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="__5pvQKs8Eeq1X9g1fXvdRg" name="DebitHost" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_AAIxwKs9Eeq1X9g1fXvdRg" name="DebitPort" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_AFtDsKs8Eeq1X9g1fXvdRg" name="Componentp_DebitAcctService" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_AFtDsas8Eeq1X9g1fXvdRg" processName="debitservice.p_DebitAcctService"/>
+    <sca:service xmi:id="_kVaXIKs8Eeq1X9g1fXvdRg" name="debit">
+      <sca:interface.wsdl xmi:id="_kVaXIas8Eeq1X9g1fXvdRg" interface="http://xmlns.example.com/20200610130118PLT#wsdl.interface(debit)"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

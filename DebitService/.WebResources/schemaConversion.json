@@ -1,0 +1,12 @@
+{"records": [
+    {
+        "jsonSchemaLocation": "/DebitService/Service Descriptors/debitservice.p_DebitAcctService-Debit.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1591801738389"
+    },
+    {
+        "jsonSchemaLocation": "/DebitService/Service Descriptors/debitservice.p_DebitAcctService-Debit.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1591801882877"
+    }
+]}
