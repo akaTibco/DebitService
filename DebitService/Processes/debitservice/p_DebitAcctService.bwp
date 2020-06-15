@@ -958,8 +958,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.4/@activities.3"/>
 
                                     <layoutConstraint
-                                    x="133"
-                                    xsi:type="notation:Bounds" y="61"/>
+                                    x="114"
+                                    xsi:type="notation:Bounds" y="92"/>
                                     </children>
 
                                     <children type="4002">
@@ -1097,7 +1097,7 @@
                                     <element href="//0/@process/@activity/@activity/@activities.0/@messages.0/@activity/@activity/@activities.4"/>
 
                                     <layoutConstraint
-                                    height="172"
+                                    height="177"
                                     width="449"
                                     x="93"
                                     xsi:type="notation:Bounds" y="5"/>

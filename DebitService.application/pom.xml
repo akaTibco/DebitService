@@ -73,6 +73,9 @@
               </build>
               <run>
                 <namingStrategy>alias</namingStrategy>
+                <ports>
+                  <port>${bwdocker.port.p0}</port>
+                </ports>
               </run>
             </image>
           </images>

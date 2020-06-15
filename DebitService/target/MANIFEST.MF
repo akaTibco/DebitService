@@ -1,0 +1,20 @@
+Manifest-Version: 1.0.0.202006141608
+Bundle-SymbolicName: DebitService
+Bundle-ManifestVersion: 2
+TIBCO-BW-Edition: bwcf
+Bundle-Vendor: TIBCO Software Inc.
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",com.tib
+ co.bw.palette; filter:="(name=bw.generalactivities)",com.tibco.bw.pal
+ ette; filter:="(name=bw.jdbc)",com.tibco.bw.sharedresource.model; fil
+ ter:="(name=bw.httpconnector)",com.tibco.bw.sharedresource.model; fil
+ ter:="(name=bw.jdbc)",com.tibco.bw.binding.model; filter:="(name=bw.r
+ est)"
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-Version: 2.5.3 V26 2020-05-15
+Bundle-Name: DebitService Module
+Bundle-Version: 1.0.0.202006141608
+Bundle-ClassPath: .
+TIBCO-BW-ApplicationModule: META-INF/module.bwm
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+
